@@ -1,0 +1,42 @@
+buildscript {
+    ext {
+        buildToolsVersion = "33.0.0"
+        minSdkVersion = 22
+        compileSdkVersion = 33
+        targetSdkVersion = 33
+        androidxActivityVersion = '1.8.0'
+        androidxAppcompatVersion = '1.6.1'
+        androidxCoordinatorLayoutVersion = '1.2.0'
+        androidxCoreVersion = '1.10.1'
+        androidxFragmentVersion = '1.6.1'
+        androidxLifecycleVersion = '2.6.1'
+        androidxPreferenceVersion = '1.2.0'
+        androidxViewPagerVersion = '1.0.0'
+        androidxWebkitVersion = '1.6.1'
+        junitVersion = '4.13.2'
+        mockitoVersion = '5.3.1'
+        mockitoKotlinVersion = '5.1.0'
+        espressoCoreVersion = '3.5.1'
+        androidxJunitVersion = '1.1.5'
+        androidxEspressoVersion = '3.5.1'
+        cordovaAndroidVersion = '12.0.0'
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.0'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
