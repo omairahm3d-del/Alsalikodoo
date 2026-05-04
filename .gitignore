@@ -105,6 +105,23 @@ temp/
 *.sqlite
 *.sqlite3
 
+# Android
+android/.gradle/
+android/local.properties
+android/app/build/
+android/.idea/
+android/*.iml
+*.apk
+*.aab
+*.aar
+
+# Secrets and keys
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.key
+
 # Webdev artifacts (checkpoint zips, migrations, etc.)
 .webdev/
 
